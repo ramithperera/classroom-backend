@@ -8,6 +8,13 @@
       "when": 1770536005774,
       "tag": "0000_faulty_morgan_stark",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1770991263406,
+      "tag": "0001_nice_blacklash",
+      "breakpoints": true
     }
   ]
 }
