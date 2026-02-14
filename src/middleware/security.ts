@@ -4,7 +4,7 @@ import {ArcjetNodeRequest, slidingWindow} from "@arcjet/node";
 
 const securityMiddleware = async (req: Request, res: Response, next: NextFunction) => {
     if(process.env.NODE_ENV === 'test') return next();
-    
+
     try {
         const role: RateLimitRole = req.user?.role ?? 'guest';
 
@@ -23,7 +23,7 @@ const securityMiddleware = async (req: Request, res: Response, next: NextFunctio
                 break;
             default:
                 limit=5;
-                message = 'Guest request limit exceeded (5 per minute). Please sign up for higher limits.)';
+                message = 'Guest request limit exceeded (5 per minute). Please sign up for higher limits.';
                     break;
         }
 
